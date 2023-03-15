@@ -8,7 +8,6 @@ public class Aula01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//
 		DecimalFormat df = new DecimalFormat("###,###,##0.00");
 		
 		Scanner leia = new Scanner(System.in);
@@ -31,7 +30,6 @@ public class Aula01 {
 		System.out.println("\nDivisão: " + df.format((numero1 / numero2)));
 		System.out.println("\nPotência: " + df.format(Math.pow(numero1, numero2)));
 		System.out.println("\nRaíz Quadrada: " + df.format(Math.sqrt(numero1)));
-		
 		System.out.println("\nNome: " + nome);
 		
 		leia.close();
