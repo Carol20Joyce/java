@@ -5,14 +5,14 @@ public class ClasseCliente {
 	private String nome;
 	private int genero;
 	private float rg;
-	private int cpf;
+	private int id;
 	private int pagamento;
 	
-	public ClasseCliente(String nome, int genero, float rg, int cpf, int pagamento) {
+	public ClasseCliente(String nome, int genero, float rg, int id, int pagamento) {
 		this.nome = nome;
 		this.genero = genero;
 		this.rg = rg;
-		this.cpf = cpf;
+		this.id = id;
 		this.pagamento = pagamento;
 	}
 
@@ -40,12 +40,12 @@ public class ClasseCliente {
 		this.rg = rg;
 	}
 
-	public float getCpf() {
-		return cpf;
+	public float getid() {
+		return id;
 	}
 
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
+	public void setid(int id) {
+		this.id = id;
 	}
 
 	public int getPagamento() {
@@ -85,10 +85,10 @@ public class ClasseCliente {
 		System.out.println("Nome do Cliente: " + this.nome);
 		System.out.println("Genêro: " + genero);
 		System.out.println("RG: " + this.rg);
-		System.out.println("CPF: " + this.cpf);
+		System.out.println("Id: " + this.id);
 		System.out.println("Tipo de Pagamento: " + pagamento);
 		System.out.println("                                      ");
-		System.out.println("                                      ");
+		
 		
 	}
 

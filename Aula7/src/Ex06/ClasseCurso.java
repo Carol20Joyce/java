@@ -4,13 +4,13 @@ public class ClasseCurso {
 	
 	private String nome;
 	private int area;
-	private String curso;
+	private int cpf;
 	private double duracao;
 	private int pagamento;
 	
-	public ClasseCurso(String nome, int area, String curso, double duracao, int pagamento) {
+	public ClasseCurso(String nome, int area, int cpf, double duracao, int pagamento) {
 		this.nome = nome;
-		this.curso = curso;
+		this.cpf = cpf;
 		this.area = area;
 		this.duracao = duracao;
 		this.pagamento = pagamento;
@@ -24,12 +24,12 @@ public class ClasseCurso {
 		this.nome = nome;
 	}
 
-	public String getCurso() {
-		return curso;
+	public int getcpf() {
+		return cpf;
 	}
 
-	public void setCurso(String curso) {
-		this.curso = curso;
+	public void setcpf(int cpf) {
+		this.cpf = cpf;
 	}
 
 	public int getArea() {
@@ -74,7 +74,7 @@ public class ClasseCurso {
 		case 4 -> area = "Ciências da Saúde.";
 		case 5 -> area = "Ciências Agrárias.";
 		case 6 -> area = "Linguística, Letras e Artes.";
-		case 7 -> area = "Ciências Sociais Aplicadas.";
+		case 7 -> area = "Ciências gastronomicas.";
 		case 8 -> area = "Ciências Humanas.";
 		
 		}
@@ -85,7 +85,7 @@ public class ClasseCurso {
 		System.out.println("************************************");
 		System.out.println("Nome do Cliente: " + this.nome);
 		System.out.println("Área do Curso: " + area);
-		System.out.println("Curso: " + this.curso);
+		System.out.println("Cpf: " + this.cpf);
 		System.out.println("Duração do Curso: " + this.duracao);
 		System.out.println("Tipo de Pagamento: " + pagamento);
 		System.out.println("                                      ");
