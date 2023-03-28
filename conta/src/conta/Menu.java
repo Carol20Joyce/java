@@ -2,8 +2,8 @@ package conta;
 
 import java.util.Scanner;
 
-import conta.model.Conta;
 import conta.model.ContaCorrente;
+import conta.model.ContaPoupança;
 import conta.util.Cores;
 
 public class Menu {
@@ -17,22 +17,12 @@ public class Menu {
 		String titular;
 		float saldo, limite, valor;
 		
-		Conta c1 = new Conta(1, 123, 1, "Jeniffer Souza", 100000.00f);
-		c1.visualizar();
 		
 		ContaCorrente cc1 = new ContaCorrente(2, 123, 1, "Gabriel Machado", 100000.00f, 1000.0f);
 		cc1.visualizar();
 		
-		cc1.sacar(100900);
-		
-		cc1.visualizar();
-		
-		cc1.depositar(2000);
-		
-		cc1.visualizar();
-		
-		Conta c2 = new Conta();
-		c2.visualizar();
+		ContaPoupança cp1 = new ContaPoupança(1, 123, 1, "Jeniffer ", 100000.00f, 28);
+		cp1.visualizar();
 		
 		while (true) {
 			
